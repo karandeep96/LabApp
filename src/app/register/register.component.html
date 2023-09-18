@@ -1,0 +1,36 @@
+<div class="wrapper">
+    <h1>SignUp</h1>
+
+    <mat-form-field appearance="outline">
+        <mat-label>Username</mat-label>
+        <input matInput placeholder="username" type="text" 
+            autocomplete="off" (value)="username" required/>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+        <mat-label>First Name</mat-label>
+        <input matInput placeholder="First Name" type="text" 
+            autocomplete="off" (value)="firstName" required/>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+        <mat-label>Last Name</mat-label>
+        <input matInput placeholder="Last Name" type="text" 
+            autocomplete="off" (value)="lastName" required/>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+        <mat-label>Email</mat-label>
+        <input matInput placeholder="Email" type="text" 
+            autocomplete="off" (value)="lastName" required/>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+        <mat-label>Phone Number</mat-label>
+        <input matInput placeholder="123456789" type="text" 
+            autocomplete="off" (value)="phoneNumber" required/>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+        <mat-label>Password</mat-label>
+        <input matInput type="password" (value)="password" required/>
+    </mat-form-field>
+
+    <button mat-raised-button color="primary" (click)="onButtonClick()">Register</button>
+</div>
